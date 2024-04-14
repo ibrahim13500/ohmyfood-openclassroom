@@ -2,111 +2,202 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/54f3183466.js" crossorigin="anonymous"></script>
-    <style media="all" id="fa-v4-font-face">
-        /*!
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/54f3183466.js" crossorigin="anonymous"></script>
+  <style media="all" id="fa-v4-font-face">
+    /*!
             * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
             * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
             * Copyright 2024 Fonticons, Inc.
             */
-        @font-face {
-            font-family: "FontAwesome";
-            font-display: block;
-            src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype")
-        }
+    @font-face {
+      font-family: "FontAwesome";
+      font-display: block;
+      src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype")
+    }
 
-        @font-face {
-            font-family: "FontAwesome";
-            font-display: block;
-            src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype")
-        }
+    @font-face {
+      font-family: "FontAwesome";
+      font-display: block;
+      src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype")
+    }
 
-        @font-face {
-            font-family: "FontAwesome";
-            font-display: block;
-            src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype");
-            unicode-range: u+f003, u+f006, u+f014, u+f016-f017, u+f01a-f01b, u+f01d, u+f022, u+f03e, u+f044, u+f046, u+f05c-f05d, u+f06e, u+f070, u+f087-f088, u+f08a, u+f094, u+f096-f097, u+f09d, u+f0a0, u+f0a2, u+f0a4-f0a7, u+f0c5, u+f0c7, u+f0e5-f0e6, u+f0eb, u+f0f6-f0f8, u+f10c, u+f114-f115, u+f118-f11a, u+f11c-f11d, u+f133, u+f147, u+f14e, u+f150-f152, u+f185-f186, u+f18e, u+f190-f192, u+f196, u+f1c1-f1c9, u+f1d9, u+f1db, u+f1e3, u+f1ea, u+f1f7, u+f1f9, u+f20a, u+f247-f248, u+f24a, u+f24d, u+f255-f25b, u+f25d, u+f271-f274, u+f278, u+f27b, u+f28c, u+f28e, u+f29c, u+f2b5, u+f2b7, u+f2ba, u+f2bc, u+f2be, u+f2c0-f2c1, u+f2c3, u+f2d0, u+f2d2, u+f2d4, u+f2dc
-        }
+    @font-face {
+      font-family: "FontAwesome";
+      font-display: block;
+      src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype");
+      unicode-range: u+f003, u+f006, u+f014, u+f016-f017, u+f01a-f01b, u+f01d, u+f022, u+f03e, u+f044, u+f046, u+f05c-f05d, u+f06e, u+f070, u+f087-f088, u+f08a, u+f094, u+f096-f097, u+f09d, u+f0a0, u+f0a2, u+f0a4-f0a7, u+f0c5, u+f0c7, u+f0e5-f0e6, u+f0eb, u+f0f6-f0f8, u+f10c, u+f114-f115, u+f118-f11a, u+f11c-f11d, u+f133, u+f147, u+f14e, u+f150-f152, u+f185-f186, u+f18e, u+f190-f192, u+f196, u+f1c1-f1c9, u+f1d9, u+f1db, u+f1e3, u+f1ea, u+f1f7, u+f1f9, u+f20a, u+f247-f248, u+f24a, u+f24d, u+f255-f25b, u+f25d, u+f271-f274, u+f278, u+f27b, u+f28c, u+f28e, u+f29c, u+f2b5, u+f2b7, u+f2ba, u+f2bc, u+f2be, u+f2c0-f2c1, u+f2c3, u+f2d0, u+f2d2, u+f2d4, u+f2dc
+    }
 
-        @font-face {
-            font-family: "FontAwesome";
-            font-display: block;
-            src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.ttf) format("truetype");
-            unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4, u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e, u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f27a
-        }
-    </style>
-    <style media="all" id="fa-v5-font-face">
-        /*!
+    @font-face {
+      font-family: "FontAwesome";
+      font-display: block;
+      src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.ttf) format("truetype");
+      unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4, u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e, u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f27a
+    }
+  </style>
+  <style media="all" id="fa-v5-font-face">
+    /*!
                 * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
                 * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
                 * Copyright 2024 Fonticons, Inc.
                 */
-        @font-face {
-            font-family: "Font Awesome 5 Brands";
-            font-display: block;
-            font-weight: 400;
-            src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype")
-        }
+    @font-face {
+      font-family: "Font Awesome 5 Brands";
+      font-display: block;
+      font-weight: 400;
+      src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype")
+    }
 
-        @font-face {
-            font-family: "Font Awesome 5 Free";
-            font-display: block;
-            font-weight: 900;
-            src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype")
-        }
+    @font-face {
+      font-family: "Font Awesome 5 Free";
+      font-display: block;
+      font-weight: 900;
+      src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype")
+    }
 
-        @font-face {
-            font-family: "Font Awesome 5 Free";
-            font-display: block;
-            font-weight: 400;
-            src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype")
-        }
-    </style>
-    <title>Ohmyfood - Paris</title>
-
-</head>
+    @font-face {
+      font-family: "Font Awesome 5 Free";
+      font-display: block;
+      font-weight: 400;
+      src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype")
+    }
+  </style>
+  <title>Ohmyfodo - Paris</title>
 
 <body>
-    <div id="overlay">
-        <div class="load">
-            <div class="load__letters">
-                <div class="letter-1">O</div>
-                <div class="letter-2">h</div>
-                <div class="letter-3">m</div>
-                <div class="letter-4">y</div>
-                <div class="letter-5">f</div>
-                <div class="letter-6">o</div>
-                <div class="letter-7">o</div>
-                <div class="letter-8">d</div>
-            </div>
-            <div class="load__bar"></div>
-        </div>
-
-        <div class="load__bar"></div>
+  <div id="overlay">
+    <div class="load">
+      <div class="load__letters">
+        <div class="letter-1">O</div>
+        <div class="letter-2">h</div>
+        <div class="letter-3">m</div>
+        <div class="letter-4">y</div>
+        <div class="letter-5">f</div>
+        <div class="letter-6">o</div>
+        <div class="letter-7">o</div>
+        <div class="letter-8">d</div>
+      </div>
+      <div class="load__bar"></div>
     </div>
-    <header class="header">
-        <div class="logo-content">
-            <a href="/">
-                <img class="header__logo" src="/images/logo/ohmyfood@2x.svg" alt="Ohmyfood Logo">
-            </a>
-        </div>
-        <div class="location">
-            <div class="location__logo">
-                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+  </div>
+  <header class="header">
+    <div class="logo-content">
+      <a href="/">
+        <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood Logo">
+      </a>
+    </div>
+    <div class="location">
+      <div class="location__logo">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <p class="location__title">Paris, Belleville</p>
+    </div>
+    <main>
+      <section class="section">
+        <div class="explore">
+          <h2 class="explore__title">Réservez le menu qui vous convient</h2>
+          <h3 class="explore__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
+          <a href="#Restaurants" class="btn__explore">
+            <div class="btn btn--main">
+              <p class="btn-explore__title">Explorer nos restaurants</p>
             </div>
-            <p class="location__title">Paris, Belleville</p>
+          </a>
         </div>
-    </header>
+      </section>
+      <section class="section-pure">
+        <div class="selection">
+          <h2 class="selection__title">Fonctionnement</h2>
+          <div class="selectors">
+            <div class="btn btn--selection">
+              <div class="btn__order">1</div>
+              <div class="btn__logo">
+                <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+              </div>
+              <p class="btn__title">Choisissez un restaurant</p>
+            </div>
+            <div class="btn btn--selection">
+              <div class="btn__order">2</div>
+              <div class="btn__logo"><i class="fa-solid fa-list-ul" aria-hidden="true"></i></div>
+              <p class="btn__title">Composez votre menu</p>
+            </div>
+            <div class="btn btn--selection">
+              <div class="btn__order">3</div>
+              <div class="btn__logo btn__logo--colored">
+                <i class="fa-solid fa-store" aria-hidden="true"></i>
+              </div>
+              <p class="btn__title">Dégustez au restaurant</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Restaurants" class="section">
+        <div class="selection">
+          <h2 class="selection__title">Restaurants</h2>
+          <div class="view-restaurants">
+            <article class="thumbnails">
+              <a class="link" href="views/la_palette_du_gout.html">
+                <p class="link__new-restaurant">Nouveau</p>
+                <img class="link__picture" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat dans un restaurant">
+                <h4 class="link__title">La palette du goût</h4>
+                <p class="link__subtitle">Ménilmontant</p>
+              </a>
+              <div class="link__like-btn">
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>
+              </div>
+            </article>
+            <article class="thumbnails">
+              <a class="link" href="views/la_note_enchantee.html">
+                <p class="link__new-restaurant">Nouveau</p>
+                <img class="link__picture thumbnails__picture--top-visible" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'une table de restaurant">
+                <h4 class="link__title">La note enchantée</h4>
+                <p class="link__subtitle">Charonne</p>
+              </a>
+              <div class="link__like-btn">
+                <i class="fa-solid fa-heart checked" aria-hidden="true"></i>
+              </div>
+            </article>
+            <article class="thumbnails">
+              <a class="link" href="views/a_la_francaise.html">
+                <img class="link__picture" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un dessert dans un restaurant">
+                <h4 class="link__title">À la française</h4>
+                <p class="link__subtitle">Cité Rouge</p>
+              </a>
+              <div class="link__like-btn">
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>
+              </div>
+            </article>
+            <article class="thumbnails">
+              <a class="link" href="views/le_delice_des_sens.html">
+                <img class="link__picture" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat dans un restaurant">
+                <h4 class="link__title">Le délice des sens</h4>
+                <p class="link__subtitle">Folie-Méricourt</p>
+              </a>
+              <div class="link__like-btn">
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </header>
+
+
+</body>
+
+</html>

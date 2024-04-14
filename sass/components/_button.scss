@@ -1,0 +1,62 @@
+
+.btn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-weight: 500;
+	position: relative;
+	margin: 12.5px 0;
+	cursor: pointer;
+}
+.btn--main {
+	background: rgb(147, 86, 220);
+	background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+	border-radius: 30px;
+	padding: 15px 20px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	color: $color_5;
+	min-width: 186px;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
+	justify-content: center;
+	transition: all 200ms ease-in-out;
+	&:hover {
+		opacity: 0.85;
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+	}
+}
+.btn--selection {
+	background: #F6F6F6;
+	border-radius: 20px;
+	padding: 25px 20px;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+	color: $color_2;
+	min-width: 220px;
+	width: 100%;
+	margin: 0 16px;
+	left: -12px;
+	&:hover {
+		>.btn__logo {
+			color: $color_8;
+		}
+		>.btn__title {
+			color: $color_8;
+		}
+	}
+}
+.btn__order{
+ position: absolute;
+ left:-12px;
+ color:$color_5;
+ background-color:$color_8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width : 24px;
+ height: 24px;
+ border-radius: 50%;
+}
+.btn__title {
+	margin-left: 24px;
+	color: $color_3;
+}

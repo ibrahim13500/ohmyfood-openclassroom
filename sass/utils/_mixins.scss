@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {
+	.thumbnails {
+		width: 48%;
+	}
+	.view-restaurants {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.restaurant-picture__picture {
+		height: 383px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.footer {
+		height: 114px;
+	}
+	.footer-content__logo {
+		text-align: right;
+		margin: 45px 0 15px 0;
+	}
+	.footer-content {
+		.footer-menu {
+			flex-direction: row;
+			justify-content: right;
+			margin-top: 30px;
+		}
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: right;
+		gap: 30px;
+	}
+	.explore {
+		width: 1200px;
+	}
+	.selection {
+		width: 1050px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.selectors {
+		flex-direction: row;
+	}
+	.menu {
+		.restaurant-menu {
+			width: 1050px;
+			margin: 0 auto;
+		}
+	}
+}
+@media screen and (min-width: 576px) {
+	.menu {
+		.restaurant-menu {
+			.category {
+				width: 65%;
+			}
+		}
+	}
+}

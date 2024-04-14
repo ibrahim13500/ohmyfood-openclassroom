@@ -1,0 +1,31 @@
+.body {
+    font-family: $font-family_1;
+    background-color: $background-color_1;
+}
+
+.section {
+    display: block;
+    unicode-bidi: isolate;
+    background-color: $background-color_3;
+}
+.explore {
+	width: 92%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	>* {
+		margin: 8px 0;
+	}
+}
+.explore__title {
+	font-weight: 700;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.explore__subtitle {
+	font-weight: 300;
+}
