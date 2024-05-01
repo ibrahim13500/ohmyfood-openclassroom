@@ -1,158 +1,101 @@
-@import "../utils/keyframes";
-@import "../utils/variables";
-@import "../utils/container";
-@import "../layout/header";
-@import "../layout/explore";
-@import "../components/button";
-@import "../layout/selections";
-@import "../utils/mixins";
 
+@use "../utils/variables" as*;
+@use "../utils/mixins" as*;
 
-
-
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+  
 html {
 	scroll-behavior: smooth;
 	box-sizing: border-box;
 }
 body {
-	font-family: $font-family_1;
-	background-color: $background-color_1;
+	font-family: $roboto;
+	background-color: $white;
 	margin: 0;
 	padding: 0;
-	&::-webkit-scrollbar {
-		width: 15px;
 	}
-	&::-webkit-scrollbar-track {
-		background: #F6F6F6;
-		border-radius: 10px;
-	}
-	&::-webkit-scrollbar-thumb {
-		background: #7E7E7E;
-		border-radius: 10px;
-	}
-}
 
-h1 {
-	font-family: $font-family_2;
+
+  
+  h1 {
+	font-family: $Shrikhand;
 	font-size: 1.75rem;
 	font-weight: 300;
-	color: $color_1;
-	margin: 0;
-	padding: 0;
-}
-h2 {
-	font-family: $font-family_1;
+	color: $black;
+  }
+  
+  h2 {
+	font-family: $roboto;
 	font-size: 1.5rem;
 	font-weight: 700;
-	color: $color_2;
-	margin: 0;
-	padding: 0;
-}
-h3 {
-	font-family: $font-family_1;
+	color: $black;
+  }
+  
+  h3 {
+	font-family: $roboto;
 	font-size: 1.125rem;
 	font-weight: 300;
-	color: $color_3;
-	margin: 0;
-	padding: 0;
-}
-h4 {
-	font-family: $font-family_1;
+	color: $dark;
+  }
+  
+  h4 {
+	font-family: $roboto;
 	font-size: 1.125rem;
 	font-weight: 700;
-	color: $color_2;
+	color: $black;
 	margin: 0;
 	padding: 0;
-}
-input {
-	font-family: $font-family_3;
+  }
+  
+  input, textarea, select {
 	font-size: inherit;
 	padding: 10px;
-	border: 1px solid #101010;
+	border: 1px solid $black;
 	&:focus {
-		outline: 2px solid #2a6cd7;
-		border: 1px solid transparent;
+	  outline: 2px solid #2a6cd7;
+	  border: 1px solid transparent;
 	}
-}
-textarea {
-	font-family: $font-family_3;
-	font-size: inherit;
+  }
+  
+  button {
+
 	padding: 10px;
-	border: 1px solid #101010;
-	&:focus {
-		outline: 2px solid #2a6cd7;
-		border: 1px solid transparent;
-	}
-}
-select {
-	font-family: $font-family_3;
-	font-size: inherit;
-	padding: 10px;
-	border: 1px solid #101010;
-	&:focus {
-		outline: 2px solid #2a6cd7;
-		border: 1px solid transparent;
-	}
-}
-button {
-	font-family: $font-family_3;
-	font-size: inherit;
-	padding: 10px;
-	border: 1px solid #101010;
+	border: 1px solid $black;
 	cursor: pointer;
-}
-* {
-	box-sizing: inherit;
-	&::before {
-		box-sizing: inherit;
-	}
-	&::after {
-		box-sizing: inherit;
-	}
-}
-h5 {
-	margin: 0;
-	padding: 0;
-}
-h6 {
-	margin: 0;
-	padding: 0;
-}
-p {
-	margin: 0;
-	padding: 0;
-}
-ul {
-	margin: 0;
-	padding: 0;
-}
-ol {
-	margin: 0;
-	padding: 0;
-}
-figure {
-	margin: 0;
-	padding: 0;
-}
-blockquote {
-	margin: 0;
-	padding: 0;
-}
-dl {
-	margin: 0;
-	padding: 0;
-}
-dd {
-	margin: 0;
-	padding: 0;
-}
-a {
-	color: $color_4;
+  }
+  
+  
+  
+  a {
+	color: black;
 	text-decoration: none;
-	&:visited {
-		color: $color_4;
-	}
-}
-li {
+	.ol .ul .li{
 	list-style: none;
+ }
 }
+	p {
+		display: block;
+		unicode-bidi: isolate;
+	}
+  
+  
+ main{
+	 
+padding: 0; 
+	  }
+.selections{
+	@media screen and (min-width: 768px) {
+		  padding: 0; 
+	}
+	  
+	@media screen and (min-width: 1200px) {
+		  padding: 0 220px; 
+	}
+	}
+
+ 

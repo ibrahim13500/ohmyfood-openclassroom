@@ -1,0 +1,97 @@
+@use "../utils/mixins" as*;
+@use "../utils/variables" as*;
+
+
+.selection {
+	@include width(92%);
+	margin: 0 auto;
+
+	&__title {
+		margin-bottom: 35px;
+	}
+
+	@include breakpoint(large) {
+		width: 1050px;
+	}
+}
+
+.view-restaurants {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	@include breakpoint (small) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.thumbnails {
+	background: #ffffff;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 251px;
+	overflow: hidden;
+	position: relative;
+}
+@include breakpoint("medium") {
+		.thumbnails {
+			width: 48%;
+		}
+	}
+.link {
+	width: 100%;
+	height: 251px;
+}
+
+.link__picture {
+	width: 100%;
+	height: 70%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: bottom;
+	object-position: bottom;
+}
+
+.link__picture--top-visible {
+	-o-object-position: center;
+	object-position: center;
+}
+
+.link__new-restaurant {
+	background: #99E2D0;
+	color: $black;
+	position: absolute;
+	right: 13px;
+	top: 13px;
+	padding: 5px 10px;
+	border-radius: 2px;
+}
+
+.link__title {
+	margin: 12px 0 0 12px;
+}
+
+.link__subtitle {
+	margin: 4px 0 0 12px;
+	font-weight: 300;
+}
+
+.link__like-btn {
+	position: absolute;
+	bottom: 32px;
+	right: 24px;
+	display: flex;
+	cursor: pointer;
+	@include heart;
+}
+
+.checked {
+	.fa-heart {
+	@include heart;
+	}
+}
+

@@ -1,3 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: #101010;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #101010;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #353535;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #101010;
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select {
+  font-size: inherit;
+  padding: 10px;
+  border: 1px solid #101010;
+}
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #2a6cd7;
+  border: 1px solid transparent;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #101010;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a .ol .ul .li {
+  list-style: none;
+}
+
+p {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+main {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .selections {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .selections {
+    padding: 0 220px;
+  }
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype");
+  unicode-range: u+f003, u+f006, u+f014, u+f016-f017, u+f01a-f01b, u+f01d, u+f022, u+f03e, u+f044, u+f046, u+f05c-f05d, u+f06e, u+f070, u+f087-f088, u+f08a, u+f094, u+f096-f097, u+f09d, u+f0a0, u+f0a2, u+f0a4-f0a7, u+f0c5, u+f0c7, u+f0e5-f0e6, u+f0eb, u+f0f6-f0f8, u+f10c, u+f114-f115, u+f118-f11a, u+f11c-f11d, u+f133, u+f147, u+f14e, u+f150-f152, u+f185-f186, u+f18e, u+f190-f192, u+f196, u+f1c1-f1c9, u+f1d9, u+f1db, u+f1e3, u+f1ea, u+f1f7, u+f1f9, u+f20a, u+f247-f248, u+f24a, u+f24d, u+f255-f25b, u+f25d, u+f271-f274, u+f278, u+f27b, u+f28c, u+f28e, u+f29c, u+f2b5, u+f2b7, u+f2ba, u+f2bc, u+f2be, u+f2c0-f2c1, u+f2c3, u+f2d0, u+f2d2, u+f2d4, u+f2dc;
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.ttf) format("truetype");
+  unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4, u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e, u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f27a;
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-display: block;
+  font-weight: 400;
+  src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-display: block;
+  font-weight: 900;
+  src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-display: block;
+  font-weight: 400;
+  src: url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype");
+}
 @keyframes loader {
   0% {
     opacity: 1;
@@ -25,6 +158,7 @@
   0% {
     opacity: 1;
     transform: scaleY(1);
+    color: #9356DC;
   }
   20% {
     opacity: 1;
@@ -67,14 +201,43 @@
     transform: scaleX(1);
   }
 }
+@keyframes display-menu {
+  0% {
+    opacity: 0;
+    transform: scaleX(1) scaleY(0.5);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(1) scaleY(1.08);
+  }
+  90% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fa-heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .section {
   width: 100%;
   padding: 50px 0;
-  background-color: #EAEAEA;
+  background-color: #353535;
 }
 
 .section-pure {
-  background-color: #F6F6F6;
+  background-color: #ffffff;
   width: 100%;
   padding: 50px 0;
 }
@@ -82,9 +245,9 @@
 #overlay {
   z-index: 900;
   position: fixed;
-  width: 50%;
-  height: 50%;
-  background-color: #89C8FA;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
   opacity: 0;
   animation: loader 3000ms ease-out forwards 1;
 }
@@ -92,7 +255,7 @@
 .load {
   z-index: 1000;
   font-family: "Shrikhand", serif;
-  color: #ffffff;
+  color: #9356DC;
   display: flex;
   height: 100%;
   margin: 0 auto;
@@ -108,9 +271,9 @@
 .load__bar {
   display: flex;
   position: relative;
-  background: #ffffff;
+  background: #9356DC;
   width: 100%;
-  height: 10px;
+  height: 3px;
   transform-origin: left;
   animation: loader__bar 3000ms ease-in-out backwards;
 }
@@ -118,184 +281,48 @@
 .load__letters {
   display: flex;
 }
+
 .load__letters .letter-1 {
   animation: loader__letters 2300ms ease-in 150ms 4;
 }
+
 .load__letters .letter-2 {
   animation: loader__letters 2300ms ease-in 300ms 4;
 }
+
 .load__letters .letter-3 {
   animation: loader__letters 2300ms ease-in 450ms 4;
 }
+
 .load__letters .letter-4 {
   animation: loader__letters 2300ms ease-in 600ms 4;
 }
+
 .load__letters .letter-5 {
   animation: loader__letters 2300ms ease-in 750ms 4;
 }
+
 .load__letters .letter-6 {
   animation: loader__letters 2300ms ease-in 900ms 4;
 }
+
 .load__letters .letter-7 {
   animation: loader__letters 2300ms ease-in 1050ms 4;
 }
+
 .load__letters .letter-8 {
   animation: loader__letters 2300ms ease-in 1200ms 4;
 }
 
-.thumbnails {
-  background: #ffffff;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 251px;
-  overflow: hidden;
-  position: relative;
-}
-.thumbnails .link {
-  width: 100%;
-  height: 251px;
-}
-.thumbnails .link__picture {
-  width: 100%;
-  height: 70%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: bottom;
-  object-position: bottom;
-}
-.thumbnails .link__picture--top-visible {
-  -o-object-position: center;
-  object-position: center;
-}
-.thumbnails .link__new-restaurant {
-  background: #99E2D0;
-  color: #008766;
-  position: absolute;
-  right: 13px;
-  top: 13px;
-  padding: 5px 10px;
-  border-radius: 2px;
-}
-.thumbnails .link__title {
-  margin: 12px 0 0 12px;
-}
-.thumbnails .link__subtitle {
-  margin: 4px 0 0 12px;
-  font-weight: 300;
-}
-.thumbnails .link__like-btn {
-  position: absolute;
-  bottom: 32px;
-  right: 24px;
-  display: flex;
-  cursor: pointer;
-}
-.thumbnails .link__like-btn .fa-heart {
-  font-weight: 100;
-  background: #000000;
-  font-size: 1.5rem;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transition: transform 300ms ease-in-out;
-}
-.thumbnails .link__like-btn .fa-heart:hover {
-  font-weight: 700;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transform: scale(1.1);
-}
-.thumbnails .link__like-btn .checked .fa-heart {
-  font-weight: 700;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.view-restaurants {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.restaurant-picture {
-  width: 100%;
-}
-
-.restaurant-picture__picture {
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
-
-.btn__title {
-  margin-left: 24px;
-  color: #353535;
-}
-
-.logo-content {
-  z-index: 800;
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 63px;
-  background-color: #ffffff;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  position: relative;
-}
-
-.logo-content__return-arrow {
-  display: flex;
-  position: absolute;
-  left: 20px;
-  font-size: 1.125rem;
-}
-
-.location {
-  display: flex;
-  z-index: 700;
-  position: relative;
-  background-color: #EAEAEA;
-  width: 100%;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.location__logo {
-  color: #101010;
-}
-
-.location__title {
-  margin-left: 17px;
-  font-weight: 500;
-  color: #353535;
-  display: block;
-}
-
 .body {
   font-family: "Roboto", sans-serif;
-  background-color: #F6F6F6;
+  background-color: #ffffff;
 }
 
 .section {
   display: block;
   unicode-bidi: isolate;
-  background-color: #EAEAEA;
+  background-color: rgb(246, 246, 246);
 }
 
 .explore {
@@ -333,29 +360,26 @@
 }
 
 .btn--main {
-  background: rgb(147, 86, 220);
-  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   border-radius: 30px;
   padding: 15px 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: #ffffff;
+  height: 50px;
   min-width: 186px;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   justify-content: center;
-  transition: all 200ms ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  transition: filter 0.3s ease;
 }
 .btn--main:hover {
-  opacity: 0.85;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.2);
 }
 
 .btn--selection {
-  background: #F6F6F6;
+  background: #ffffff;
   border-radius: 20px;
   padding: 25px 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  color: #000000;
+  color: #ffffff;
   min-width: 220px;
   width: 100%;
   margin: 0 16px;
@@ -386,241 +410,474 @@
   color: #353535;
 }
 
-.selection {
-  width: 92%;
-  margin: 0 auto;
-}
-
-.selection__title {
-  margin-bottom: 35px;
-  margin: 0 0 35px;
-}
-
-.selectors {
+.footer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .thumbnails {
-    width: 48%;
-  }
-  .view-restaurants {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .restaurant-picture__picture {
-    height: 383px;
-  }
+  width: 100%;
+  margin: 0;
+  height: 186px;
+  background-color: #353535;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .footer {
     height: 114px;
   }
-  .footer-content__logo {
-    text-align: right;
-    margin: 45px 0 15px 0;
-  }
-  .footer-content {
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  height: 100%;
+  color: white;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer-content {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: right;
     gap: 30px;
   }
-  .footer-content .footer-menu {
+}
+.footer .footer-content .footer-content__logo {
+  font-size: 1.125rem;
+  color: white;
+  font-family: "Shrikhand", serif;
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer-content .footer-content__logo {
+    text-align: right;
+    margin: 45px 0 15px 0;
+  }
+}
+.footer .footer-content .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer-content .footer-menu {
     flex-direction: row;
     justify-content: right;
     margin-top: 30px;
   }
-  .explore {
-    width: 1200px;
-  }
+}
+.footer .footer-content .footer-menu .fa-solid {
+  font-size: 0.8rem;
+  margin-right: 5px;
+  width: 20px;
+}
+.footer .footer-content .footer-menu .fa-solid--rotate {
+  transform: rotate(-45deg);
+}
+.footer .footer-content .footer-menu .footer-menu__link {
+  font-weight: 400;
+  color: white;
+}
+.footer .footer-content .footer-menu .footer-menu__link--medium {
+  font-weight: 500;
+}
+
+.btn__title {
+  margin-left: 24px;
+  color: #353535;
+}
+
+.logo-content {
+  z-index: 800;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 63px;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.logo-content__return-arrow {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  font-size: 1.125rem;
+}
+
+.location {
+  display: flex;
+  z-index: 700;
+  position: relative;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.location__logo {
+  color: #101010;
+}
+.location__title {
+  margin-left: 17px;
+  font-weight: 500;
+  color: #353535;
+  display: block;
+}
+
+.selection {
+  width: 92%;
+  margin: 0 auto;
+}
+.selection__title {
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 1200px) {
   .selection {
     width: 1050px;
   }
 }
-@media screen and (min-width: 992px) {
-  .selectors {
+
+.view-restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .view-restaurants {
     flex-direction: row;
-  }
-  .menu .restaurant-menu {
-    width: 1050px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
-@media screen and (min-width: 576px) {
+
+.thumbnails {
+  background: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 251px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .thumbnails {
+    width: 48%;
+  }
+}
+.link {
+  width: 100%;
+  height: 251px;
+}
+
+.link__picture {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+}
+
+.link__picture--top-visible {
+  -o-object-position: center;
+  object-position: center;
+}
+
+.link__new-restaurant {
+  background: #99E2D0;
+  color: #101010;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.link__title {
+  margin: 12px 0 0 12px;
+}
+
+.link__subtitle {
+  margin: 4px 0 0 12px;
+  font-weight: 300;
+}
+
+.link__like-btn {
+  position: absolute;
+  bottom: 32px;
+  right: 24px;
+  display: flex;
+  cursor: pointer;
+}
+.link__like-btn .fa-heart {
+  font-weight: 100;
+  background: transparent;
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: black;
+  transition: transform 1000ms ease-in-out;
+}
+.link__like-btn .fa-heart:hover {
+  font-weight: 700;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(1);
+}
+
+.checked .fa-heart .fa-heart {
+  font-weight: 100;
+  background: transparent;
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: black;
+  transition: transform 1000ms ease-in-out;
+}
+.checked .fa-heart .fa-heart:hover {
+  font-weight: 700;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(1);
+}
+
+.selections {
+  counter-reset: list;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  margin: auto;
+  width: 92%;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 1200px) {
+  .selections {
+    width: 98%;
+    flex-direction: row;
+  }
+}
+.selections .section-title {
+  margin-bottom: 35px;
+}
+.selections ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 25px;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .selections ol {
+    flex-direction: row;
+    margin-bottom: 35px;
+    font-weight: bold;
+    margin-left: 10px;
+    width: 98%;
+  }
+}
+.selections li {
+  position: relative;
+  border-radius: 1rem;
+  flex-grow: 1;
+  margin: 0 7px;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.selections li::before {
+  content: counter(list);
+  counter-increment: list;
+  color: white;
+  background-color: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: -1rem;
+  bottom: 1rem;
+}
+.selections i.fas {
+  color: rgb(126, 126, 126);
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.selections i.fa-store {
+  color: #9356DC;
+}
+
+.restaurant-picture {
+  width: 100%;
+}
+
+.restaurant-picture__picture {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-picture__picture {
+    height: 383px;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 40px;
+  background: #ffffff;
+  border-top-right-radius: 40px;
+  margin-top: -50px;
+}
+.menu .restaurant-menu {
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  padding: 30px 0;
+  align-items: center;
+}
+.menu .restaurant-menu .order-link {
+  margin-top: 20px;
+}
+.menu .restaurant-menu__title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.menu .restaurant-menu__title .like-btn {
+  margin-left: 32px;
+  display: flex;
+  cursor: pointer;
+}
+.menu .restaurant-menu__title .like-btn .fa-heart {
+  font-weight: 100;
+  background: transparent;
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: black;
+  transition: transform 1000ms ease-in-out;
+}
+.menu .restaurant-menu__title .like-btn .fa-heart:hover {
+  font-weight: 700;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(1);
+}
+.menu .restaurant-menu__title .checked .fa-heart {
+  font-weight: 700;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.restaurant-menu .cat-1 {
+  animation: display-menu 2s ease-in 700ms;
+}
+.restaurant-menu .cat-2 {
+  animation: display-menu 2s ease-in 1400ms;
+}
+.restaurant-menu .cat-3 {
+  animation: display-menu 2s ease-in 2100ms;
+}
+.restaurant-menu .category {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: 30px auto 0 auto;
+  opacity: 0;
+  transform-origin: top left;
+  animation-fill-mode: forwards;
+}
+.restaurant-menu .category__title {
+  width: 40px;
+  font-size: 1rem;
+  border-bottom: 3px solid #99E2D0;
+}
+.restaurant-menu .category__item {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  width: 100%;
+  min-height: 69px;
+  border-radius: 15px;
+  margin-top: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+}
+.restaurant-menu .category__item .content {
+  display: flex;
+  padding: 12px 14px;
+  width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.restaurant-menu .category__item .content .name {
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 69px);
+  font-size: 1.125rem;
+}
+.restaurant-menu .category__item .content p {
+  min-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 69px);
+  font-size: 0.938rem;
+}
+.restaurant-menu .category__item .content .price {
+  text-align: right;
+  margin-top: -18px;
+  font-size: 0.938rem;
+}
+.restaurant-menu .category__item .checkbox {
+  display: flex;
+  width: 0px;
+  background: #99E2D0;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  transition: width 200ms ease-in-out;
+}
+.restaurant-menu .category__item:hover > .checkbox {
+  width: 69px;
+}
+
+@media screen and (min-width: 768px) {
   .menu .restaurant-menu .category {
     width: 65%;
   }
 }
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #F6F6F6;
-  margin: 0;
-  padding: 0;
-}
-body::-webkit-scrollbar {
-  width: 15px;
-}
-body::-webkit-scrollbar-track {
-  background: #F6F6F6;
-  border-radius: 10px;
-}
-body::-webkit-scrollbar-thumb {
-  background: #7E7E7E;
-  border-radius: 10px;
-}
-
-h1 {
-  font-family: "Shrikhand", serif;
-  font-size: 1.75rem;
-  font-weight: 300;
-  color: #101010;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-}
-
-h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 300;
-  color: #353535;
-  margin: 0;
-  padding: 0;
-}
-
-h4 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-}
-
-input {
-  font-family: inherit;
-  font-size: inherit;
-  padding: 10px;
-  border: 1px solid #101010;
-}
-input:focus {
-  outline: 2px solid #2a6cd7;
-  border: 1px solid transparent;
-}
-
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  padding: 10px;
-  border: 1px solid #101010;
-}
-textarea:focus {
-  outline: 2px solid #2a6cd7;
-  border: 1px solid transparent;
-}
-
-select {
-  font-family: inherit;
-  font-size: inherit;
-  padding: 10px;
-  border: 1px solid #101010;
-}
-select:focus {
-  outline: 2px solid #2a6cd7;
-  border: 1px solid transparent;
-}
-
-button {
-  font-family: inherit;
-  font-size: inherit;
-  padding: 10px;
-  border: 1px solid #101010;
-  cursor: pointer;
-}
-
-* {
-  box-sizing: inherit;
-}
-*::before {
-  box-sizing: inherit;
-}
-*::after {
-  box-sizing: inherit;
-}
-
-h5 {
-  margin: 0;
-  padding: 0;
-}
-
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0;
-}
-
-dl {
-  margin: 0;
-  padding: 0;
-}
-
-dd {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-a:visited {
-  color: inherit;
-}
-
-li {
-  list-style: none;
+@media screen and (min-width: 992px) {
+  .menu .restaurant-menu {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

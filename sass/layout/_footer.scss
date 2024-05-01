@@ -1,0 +1,77 @@
+@use "../utils/variables" as*;
+@use "../utils/mixins" as*;
+@use "../components/button" as*;
+@use "../base/font.scss" as*;
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: 186px;
+    background-color: #353535;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint("large") {
+        height: 114px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; // Changement pour la version mobile
+        width: 92%;
+        height: 100%;
+        color: white;
+        justify-content: center;
+
+        @include breakpoint("large") {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: right;
+            gap: 30px;
+        }
+
+        .footer-content__logo {
+            font-size: 1.125rem;
+            color: white;
+            font-family: $Shrikhand;
+
+            @include breakpoint("large") {
+                text-align: right;
+                margin: 45px 0 15px 0;
+            }
+        }
+
+        .footer-menu {
+            display: flex;
+            flex-direction: column; // Changement pour la version mobile
+            gap: 8px;
+
+            @include breakpoint("large") {
+                flex-direction: row;
+                justify-content: right;
+                margin-top: 30px;
+            }
+
+            .fa-solid {
+                font-size: 0.8rem;
+                margin-right: 5px;
+                width: 20px;
+            }
+
+            .fa-solid--rotate {
+                transform: rotate(-45deg);
+            }
+
+            .footer-menu__link {
+                font-weight: 400;
+                color: white;
+
+                &--medium {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

@@ -1,15 +1,74 @@
-.selection {
-	width: 92%;
-	margin: 0 auto;
-}
-.selection__title {
-	margin-bottom: 35px;
-    margin: 0 0 35px,
-}
-.selectors {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	gap: 25px;
-}
+@use "../utils/mixins" as*;
+@use "../utils/variables" as*;
+@use "../base/font.scss" as*;
 
+
+.selections {
+    counter-reset: list;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    margin: auto;
+    width: 92%;
+    margin-left: auto;
+    justify-content: space-evenly;
+
+    @include breakpoint("large") {
+        width: 98%;
+        flex-direction: row;
+    }
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-left: auto;
+
+        @include breakpoint("large") {
+            flex-direction: row;
+            margin-bottom: 35px;
+            font-weight: bold;
+            margin-left: 10px;
+            width: 98%;
+        }
+    }
+
+    & li {
+        position: relative;
+        border-radius: 1rem;
+        flex-grow: 1;
+        margin: 0 7px;
+        background-color: #f6f6f6;
+        padding: 1.5rem 2rem;
+        @include base-shadow;
+
+        &::before {
+            content: counter(list);
+            counter-increment: list;
+            color: white;
+            background-color: $blue-Violet;
+            width: 2*$base-hight;
+            height: 2*$base-hight;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            position: absolute;
+            left: -1*$base-hight;
+            bottom: $base-hight;
+        }
+    }
+
+    & i.fas {
+        color: rgba(126, 126, 126, 1);
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+
+    & i.fa-store {
+        color: $blue-Violet;
+    }
+}

@@ -1,8 +1,17 @@
 // pas de code css, uniquement des @use
 
-@import "./base/base";
+@use "./base/base" as*;
+@use "./base/font.scss" as*;
 
+@use "./layout/animation" as*;
+@use "./layout/explore" as*;
+@use "./layout/footer" as*;
+@use "./layout/header" as*;
+@use "./layout/restaurants" as*;
+@use "./layout/selections" as*;
+@use "./pages/menu" as*;
 
+@use "./components/button" as*;
 
 
 

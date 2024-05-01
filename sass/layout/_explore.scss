@@ -1,12 +1,15 @@
+@use "../utils/variables" as*;
+@use "../utils/mixins" as*;
+
 .body {
-    font-family: $font-family_1;
-    background-color: $background-color_1;
+    font-family: $roboto;
+    background-color: $white;
 }
 
 .section {
     display: block;
     unicode-bidi: isolate;
-    background-color: $background-color_3;
+    background-color: rgba(246, 246, 246, 1);
 }
 .explore {
 	width: 92%;
