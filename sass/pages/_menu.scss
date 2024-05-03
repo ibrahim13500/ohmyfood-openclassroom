@@ -1,11 +1,12 @@
-@use "../components/button" as*;
+@use "../base/base" as*;
+
 @use "../utils/variables" as*;
 @use "../utils/mixins" as*;
 @use "../utils/keyframes" as*;
-@use "../base/base" as*;
 
+@use "../components/button" as*;
 
-
+//restaurant images//
 
 .restaurant-picture {
   width: 100%;
@@ -25,6 +26,7 @@
   }
 }
 
+//Menu//
 .menu {
   display: flex;
   flex-direction: column;
@@ -52,6 +54,8 @@
     justify-content: center;
     align-items: center;
 
+//button heart+animation//
+
     .like-btn {
       margin-left: 32px;
       display: flex;
@@ -70,6 +74,7 @@
     }
   }
 
+  //animation card menu//
   .restaurant-menu {
     .cat-1 {
       animation: display-menu 2s ease-in 700ms;
@@ -161,12 +166,15 @@
     }
   }
 
+//breakpoint phone//
 
 @include breakpoint("small") {
   .menu .restaurant-menu .category {
     width: 65%;
   }
 }
+
+//breakpoint Tab//
 
 @include breakpoint("medium"){
   .menu .restaurant-menu {

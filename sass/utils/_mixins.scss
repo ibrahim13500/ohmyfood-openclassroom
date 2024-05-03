@@ -14,9 +14,7 @@
 
 
 
-@mixin width($size) {
-    width: $size;
-  }
+
 
   @mixin gradient($color1, $color2)
   {
@@ -24,9 +22,7 @@
 	background: linear-gradient(to top, $color1, $color2);
   }
   
-  @mixin box-shadow($x, $y, $blur, $color) {
-	box-shadow: $x $y $blur rgba(0, 0, 0, $color);
-  }
+
   
   
 
@@ -34,6 +30,7 @@
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
   }
+  //**button heart**//
 @mixin heart {
 	.fa-heart {
 		font-weight: 100;
@@ -47,8 +44,9 @@
 		transition-duration: 1s;
 		&:hover {
 			font-weight: 700;
-			background: rgb(147, 86, 220);
-			background-image: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218));
+			background:#9356DC;
+			background-image: linear-gradient(180deg, #9356DC, #FF79DA);
+
 			-webkit-background-clip: text;
 			background-clip: text;
 			color: transparent;

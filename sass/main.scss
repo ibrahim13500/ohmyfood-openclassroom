@@ -1,9 +1,9 @@
-// pas de code css, uniquement des @use
+// pas de code css, uniquement des @use//
 
 @use "./base/base" as*;
 @use "./base/font.scss" as*;
 
-@use "./layout/animation" as*;
+@use "./layout/animation-loader" as*;
 @use "./layout/explore" as*;
 @use "./layout/footer" as*;
 @use "./layout/header" as*;

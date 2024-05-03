@@ -1,4 +1,6 @@
 @use "../utils/variables" as*;
+
+//**Keyframes Loader**//
 @keyframes loader {
 	0% {
 	  opacity: 1;
@@ -70,6 +72,8 @@
 	}
   }
 
+  //**Keyframe menu card**//
+
   @keyframes display-menu {
 	0% {
 	  opacity: 0;
@@ -89,14 +93,4 @@
 	}
   }
 
-  @keyframes fa-heart {
-	0% {
-	  transform: scale(1);
-	}
-	50% {
-	  transform: scale(1.1);
-	}
-	100% {
-	  transform: scale(1);
-	}
-  }
+  

@@ -18,11 +18,10 @@
     min-width: 186px;
     justify-content: center;
     @include gradient(#9356DC, #FF79DA);
-
-    transition: filter 0.3s ease; // Ajoute une transition pour une animation fluide
+    transition: filter 0.3s ease; 
 
     &:hover {
-        filter: brightness(1.2); // Augmente la luminosité au survol
+        filter: brightness(1.2); 
     }
 }
 .btn--selection {

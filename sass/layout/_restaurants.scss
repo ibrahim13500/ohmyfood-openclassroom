@@ -3,8 +3,8 @@
 
 
 .selection {
-	@include width(92%);
 	margin: 0 auto;
+	width: 92%;
 
 	&__title {
 		margin-bottom: 35px;
@@ -89,9 +89,4 @@
 	@include heart;
 }
 
-.checked {
-	.fa-heart {
-	@include heart;
-	}
-}
 

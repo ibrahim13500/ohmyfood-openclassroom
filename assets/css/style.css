@@ -47,16 +47,6 @@ h4 {
   padding: 0;
 }
 
-input, textarea, select {
-  font-size: inherit;
-  padding: 10px;
-  border: 1px solid #101010;
-}
-input:focus, textarea:focus, select:focus {
-  outline: 2px solid #2a6cd7;
-  border: 1px solid transparent;
-}
-
 button {
   padding: 10px;
   border: 1px solid #101010;
@@ -219,27 +209,10 @@ main {
     opacity: 1;
   }
 }
-@keyframes fa-heart {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .section {
   width: 100%;
   padding: 50px 0;
   background-color: #353535;
-}
-
-.section-pure {
-  background-color: #ffffff;
-  width: 100%;
-  padding: 50px 0;
 }
 
 #overlay {
@@ -526,8 +499,8 @@ main {
 }
 
 .selection {
-  width: 92%;
   margin: 0 auto;
+  width: 92%;
 }
 .selection__title {
   margin-bottom: 35px;
@@ -625,29 +598,8 @@ main {
 }
 .link__like-btn .fa-heart:hover {
   font-weight: 700;
-  background: rgb(147, 86, 220);
-  background-image: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  opacity: 1;
-}
-
-.checked .fa-heart .fa-heart {
-  font-weight: 100;
-  background: transparent;
-  font-size: 1.5rem;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: black;
-  opacity: 1;
-  transition-property: all;
-  transition-duration: 1s;
-}
-.checked .fa-heart .fa-heart:hover {
-  font-weight: 700;
-  background: rgb(147, 86, 220);
-  background-image: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  background: #9356DC;
+  background-image: linear-gradient(180deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -780,8 +732,8 @@ main {
 }
 .menu .restaurant-menu__title .like-btn .fa-heart:hover {
   font-weight: 700;
-  background: rgb(147, 86, 220);
-  background-image: linear-gradient(180deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  background: #9356DC;
+  background-image: linear-gradient(180deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
